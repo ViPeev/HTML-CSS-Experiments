@@ -1,0 +1,30 @@
+#icon-elem-1,#icon-elem-2,#icon-elem-3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    border-radius:5px;
+    transition: transform 0.7s, background-color 1s, opacity 0.2s;
+}
+
+#icon-container {
+    cursor:pointer;
+    display:inline-block;
+}
+
+
+.change #icon-elem-1 {
+    transform: rotate(-405deg) translate(-9px, 6px) ;
+    -webkit-transform: rotate(-405deg) translate(-9px, 6px);
+    background-color:red;
+} 
+
+.change #icon-elem-2 {
+    opacity:0;
+} 
+
+.change #icon-elem-3 {
+    transform: rotate(405deg) translate(-8px, -7px);
+    -webkit-transform: rotate(405deg) translate(-8px, -7px);
+    background-color:red;
+}

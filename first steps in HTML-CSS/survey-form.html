@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheet2.css">
+    <link href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple" rel="stylesheet" type="text/css">
+    <title>Input Form</title>
+</head>
+<body>
+    <div id="background-shade">
+      <div id="form-container">
+          <h1> freeCodeCamp Survey Form</h1>
+          <p id="title"> Thank you for taking the time to help us improve the platform
+         </p>
+         <form autocomplete="off">
+             <label class="required" class="bold" for="inputfirstname"> First Name </label>
+             <input id="inputfirstname" type="text" required autofocus value="Enter First Name">
+             <label class="required" class="bold" for="inputlastname"> Last Name </label>
+             <input id="inputlastname" type="text" required value="Enter Last Name">
+             <label class="bold" for="inputemail"> E-mail</label>
+             <input id="inputemail" type="email" required value="Enter e-mail"> 
+             <label class="required" class="bold" for="inputage"> Age</label>
+             <input id="inputage" type="number" required min="1" max="99">
+             <label class="required" class="bold" for="inputselect1"> Which option best describes your current role?</label>
+             <select id="inputselect1" value="Select current role" required>
+                 <option disabled="true"> Select option </option>
+                 <option> Student </option>
+                 <option> Full time job </option>
+                 <option> Full time learner </option>
+                 <option> Prefer not to say </option>
+                 <option> Other </option>
+            </select>
+            <p class="bold"> Would you recommend freeCodeCamp to a friend?</p>
+            <input type="radio" name="radoption" id="inputrecom1">
+            <label for="inputrecom1">Definitely</label>
+            <br>
+            <input type="radio" name="radoption" id="inputrecom2">
+            <label for="inputrecom2" >Maybe</label>
+            <br>
+            <input type="radio" name="radoption" id="inputrecom3">
+            <label for="inputrecom3">Not sure</label>
+            <br>
+            <label class="bold" for="inputselect2" id="labelinput2"> What is your favorite feature of freeCodeCamp?
+            </label>
+            <select id="inputselect2" required>
+                <option disabled="true"> Select Option</option>
+                <option> Challenges</option>
+                <option> Projects</option>
+                <option> Community</option>
+                <option> Open source</option>
+            </select>
+            <p class="bold"> What would you like to see improved? (Check all that apply)
+            </p>
+            <input type="checkbox" id="check1">
+            <label class="checklabel"  for="check1">Front-end Projects</label><br>
+            <input type="checkbox" id="check2">
+            <label class="checklabel" for="check2">Back-end Projects</label><br>
+            <input type="checkbox" id="check3">
+            <label class="checklabel" for="check3">Data Visualization</label><br>
+            <input type="checkbox" id="check4">
+            <label class="checklabel" for="check4">Challenges</label><br>
+            <input type="checkbox" id="check5">
+            <label class="checklabel" for="check5">Open Source Community</label><br>
+            <input type="checkbox" id="check6">
+            <label class="checklabel" for="check6">Gitter help rooms</label><br>
+            <input type="checkbox" id="check7">
+            <label class="checklabel" for="check7">Videos</label><br>
+            <input type="checkbox" id="check8">
+            <label class="checklabel" for="check8">City Meetups</label><br>
+            <input type="checkbox" id="check9">
+            <label class="checklabel" for="check9">Wiki</label><br>
+            <input type="checkbox" id="check10">
+            <label class="checklabel" for="check10">Forum</label><br>
+            <input type="checkbox" id="check11">
+            <label class="checklabel" for="check11">Additional courses</label><br>
+            <label class="bold" id="textlabel1" for="textfield1"> Any comments or suggestions?</label>
+            <textarea></textarea>
+            <button> Submit</button>
+         </form>
+      </div>
+    </div>
+</body>
+</html>

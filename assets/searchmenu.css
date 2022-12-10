@@ -1,0 +1,48 @@
+* {margin: 0;}
+
+body {box-sizing:border-box}
+
+nav {
+    width:15%;
+    height:90vh;
+    overflow-y:scroll;
+    background-color:#555;
+    min-width:150px;
+}
+
+nav * {
+    margin:10px 0;
+}
+
+h2 {
+    width:15%;
+    height:7vh;
+    text-align:center;
+    padding-top:10px;
+    font-size:35px;
+    background-color:rgb(155, 155, 155);
+    color:white;
+    min-width:150px;
+
+}
+
+[type="search"] {
+    width:15%;
+    border:none;
+    outline:none;
+    background-color:rgb(155, 155, 155);
+    color:white;
+    font-size:13px;
+    padding:5px 0 5px 8px;
+    min-width:150px;
+    border-top:solid 2px white;
+    border-bottom:solid 2px white;
+}
+
+nav ul,a, li {
+    text-decoration:none;
+    text-align:left;
+    list-style-type: none;
+    color:white;
+    padding:0 0 0 5px;
+}

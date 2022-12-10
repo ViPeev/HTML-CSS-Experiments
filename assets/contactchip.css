@@ -1,0 +1,116 @@
+* {box-sizing: border-box;}
+
+body {margin: 0; padding: 0;}
+
+#img-cot {
+    margin:20px;
+border-radius:20px;
+width:max-content;
+height:41px;
+border-radius:20px;
+overflow: auto;
+background-color:rgb(202, 198, 198);
+cursor:pointer;
+}
+
+#chip-img {
+    float:left;
+    width:40px;
+    height:100%;
+    border-radius:50%;
+}
+
+#img-caption {
+    float:left;
+    width:0;
+    height:100%;
+    line-height:40px;
+    overflow:hidden;
+    transition:0.35s;
+}
+
+#img-cot:hover #img-caption {
+    width:80px;
+    margin: 0 10px 0 10px;
+}
+
+#card-cont {
+    margin:30px;
+    width:max-content;
+    height: max-content;
+    border-radius:20px;
+    text-align: center;
+    background-color:rgb(230, 205, 205);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition:0.3s;
+}
+
+#card-img {
+    float:none;
+    width:300px;
+    height:300px;
+    border-radius: 20px 20px 0 0;
+}
+
+#card-caption {
+    width:300px;
+    height:100px;
+}
+
+h2 {
+    margin:10px;
+}
+
+#card-cont:hover {
+    transform: translateY(-5px);
+    box-shadow: rgb(38, 57, 77) 0px 25px 35px -7px;
+}
+
+hr {
+    border:solid 2px green;
+}
+
+ul {
+    display:inline-block;
+    width:max-content;
+    height: max-content;
+    margin:10px;
+    padding: 0;
+    list-style-type: none;
+    color:white;
+}
+
+li {
+    padding:10px;
+    background-color: rgb(177, 163, 163);
+    width:500px;
+    border:1px solid black;
+    margin-top:-1px;
+}
+
+h3 {
+    font-size: 5vw;
+}
+
+#img-bg {
+    border:solid 1px gray;
+    width:20%;
+    height:400px;
+    background-image:url("unsplash5.jpg");
+    background-size:contain;
+    background-repeat:no-repeat;
+    position:relative;
+}
+
+#cutout-text {
+position:absolute;
+top: 45%;
+left:30%;
+font-size:60px;
+font-weight: bolder;
+color:black;
+padding:20px;
+background-color:rgb(255, 255, 255);
+mix-blend-mode: screen;
+text-align: center;
+}

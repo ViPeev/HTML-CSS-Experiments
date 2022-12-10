@@ -1,0 +1,29 @@
+* {box-sizing: border-box;}
+body {padding: 0;margin: 0;}
+
+.icon-bar {
+    /* width:100px; - Vertical styling */
+    width:100%; /* Horizontal styling */
+    overflow:auto; /*Horizontal styling */
+    background-color: #555;
+}
+
+.icon-bar a {
+    /* display:block;
+    padding:16px; - Vertical styling */
+    transition: 0.3s ease; 
+    text-align:center;
+    font-size:36px;
+    color:white;
+    float: left; /* Horizontal styling */
+    width:20%; /* Horizontal styling */
+    padding: 12px 0; /* Horizontal styling */
+}
+
+a:hover {
+    background-color: #000;
+}
+
+.active, .active:hover {
+    background-color: #04AA6D;
+}

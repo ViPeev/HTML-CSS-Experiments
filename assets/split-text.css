@@ -1,0 +1,43 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  margin:auto;
+  color:white;
+  cursor:pointer;
+}
+
+.container span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  background-color:black;
+  font-size: 25px;
+  border-radius:20px;
+  transition: 0.3s;
+  overflow:none;
+}
+
+#one {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+#two {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.container:hover #one {
+    transform: translateX(-30px);
+}
+
+.container:hover #two{
+    transform: translateX(30px);
+}

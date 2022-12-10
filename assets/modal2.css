@@ -1,0 +1,32 @@
+* {box-sizing: border-box;}
+
+body {margin: 0;padding: 0;}
+
+#cont {
+    width:50%;
+    height:max-content;
+    margin:30px auto;
+    border:solid 1px #808080;
+    text-align: center;
+    color:white;
+    transform:translateY(-500px);
+    transition:0.5s transform, opacity 2s;
+    opacity:0;
+}
+
+#cont div {
+    width:100%;
+    padding:25px;
+}
+
+#cont div:nth-child(2) {
+    background-color: rgb(145, 145, 145);
+
+}
+#cont div:nth-child(3),h2 {
+    background-color: rgb(224, 0, 0);
+}
+
+h2 {padding:20px;margin: 0;}
+
+

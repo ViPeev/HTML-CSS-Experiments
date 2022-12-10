@@ -1,0 +1,57 @@
+* {
+    box-sizing:border-box
+}
+
+body {margin: 0;padding: 0;}
+
+div {
+    width:max-content;
+    height:max-content;
+}
+
+a {
+    display:block;
+    width:150px;
+    text-transform: capitalize;
+    text-align:center;
+    padding:15px 10px;
+    margin:10px 10px 10px 0;
+    background-color: rgb(207, 198, 96);
+    border-radius: 0 20px 20px 0;
+    border-top: solid brown 2px;
+    border-bottom: solid brown 2px;
+    border-right: solid brown 2px;
+    text-decoration:none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color:white;
+    transform: translateX(-120px);
+    transition: 0.4s;
+}
+
+a::after {
+    content:">";
+    float:right;
+    color:purple;
+}
+
+a:hover {
+    transform: translateX(-10px);
+    box-shadow: 2px 15px 10px 5px rgb(165, 165, 165);
+}
+
+#about {
+    background:blue;
+}
+
+#blog {
+    background-color:red;
+}
+
+#projects {
+    background-color: yellow;
+}
+
+#contacts {
+    background-color:green;
+}

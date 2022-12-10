@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fab6f5523d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="fname">First name</label>
+        <input type="text" id="fname" required placeholder="First name">
+        <label for="lname">Last name</label>
+        <input type="text" id="lname" required placeholder="Last name">
+        <label for="country">Country</label>
+        <select id="country" required placeholder="Country">
+            <optgroup label="North America">
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Mexico">Mexico</option>
+              </optgroup>
+              <optgroup label="Central America">
+                <option value="Guatemala">Guatemala</option>
+                <option value="Salvador">Salvador</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Panama">Panama</option>
+                <option value="Belise">Belise</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Honduras">Honduras</option>
+              </optgroup>
+        </select>
+        <label for="textarea">Subject</label>
+        <textarea id="textarea"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

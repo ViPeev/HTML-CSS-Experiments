@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    margin:30px auto;
+    height:max-content;
+    width:80%;
+    border:solid 1px gray;
+    overflow: auto;
+}
+
+.container {
+    float:left;
+    width:33.3%;
+    height:150px;
+    overflow:hidden;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.container:hover img {
+    transform: scale(1.2);
+}
+
+.container:nth-of-type(2) {
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    margin:0 -160px;
+}
+
+img {
+    width:100%;
+    height:100%;
+    transition: 0.4s;
+}
