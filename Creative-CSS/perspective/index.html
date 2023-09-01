@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perspective</title>
+    <style>
+      div {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #perspective {
+        perspective: 1000px;
+      }
+
+      .rotate-x {
+        transition: transform 1s ease 0.5s;
+        aspect-ratio: 2/3;
+        height: 60%;
+      }
+      .rotate-x:hover {
+        transform: rotateX(30deg);
+      }
+      .rotate-y {
+        transition: transform 1s ease 0.5s;
+        aspect-ratio: 2/3;
+        height: 60%;
+      }
+      .rotate-y:hover {
+        transform: rotateY(30deg) translateZ(200px);
+      }
+      .rotate-z {
+        transition: transform 1s ease 0.5s;
+        aspect-ratio: 2/3;
+        height: 60%;
+      }
+      .rotate-z:hover {
+        transform: rotateZ(30deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="perspective">
+      <img
+        class="rotate-x"
+        src="https://picsum.photos/id/237/200/300"
+        alt="pup"
+      />
+      <img
+        class="rotate-y"
+        src="https://picsum.photos/id/237/200/300"
+        alt="pup"
+      />
+      <img
+        class="rotate-z"
+        src="https://picsum.photos/id/237/200/300"
+        alt="pup"
+      />
+    </div>
+    <div>
+      <img
+        class="rotate-x"
+        src="https://picsum.photos/id/237/200/300"
+        alt="pup"
+      />
+      <img
+        class="rotate-y"
+        src="https://picsum.photos/id/237/200/300"
+        alt="pup"
+      />
+      <img
+        class="rotate-z"
+        src="https://picsum.photos/id/237/200/300"
+        alt="pup"
+      />
+    </div>
+  </body>
+</html>

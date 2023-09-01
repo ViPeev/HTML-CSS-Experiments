@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      align-items: center;
+      background-color: white;
+      box-sizing: border-box;
+    }
+    button {
+      all: unset;
+      border: solid 3px rgb(38, 38, 180);
+      padding: 20px 40px;
+      font-size: 25px;
+      color: white;
+      position: relative;
+      transition: all 0.3s;
+      overflow: hidden;
+    }
+
+    button:before {
+      content: "";
+      position: absolute;
+      height: 30%;
+      aspect-ratio: 1/1;
+      background-color: rgb(77, 14, 179);
+      top: 50%;
+      left: 50%;
+      transition: all 0.5s;
+      transform: translate(-50%, -50%) rotateZ(45deg) scale(10);
+      z-index: -1;
+    }
+
+    button:hover:before {
+      background-color: white;
+      transform: translate(-50%, -50%) rotateZ(45deg);
+    }
+
+    button:hover {
+      color: rgb(77, 14, 179);
+    }
+  </style>
+  <body>
+    <button type="button">Button</button>
+  </body>
+</html>
