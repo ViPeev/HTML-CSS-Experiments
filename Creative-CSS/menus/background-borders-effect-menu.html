@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        background-color: white;
+        box-sizing: border-box;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+      }
+
+      ul li {
+        list-style: none;
+        box-sizing: content-box;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: #3d3d3d;
+        font-size: 22px;
+        display: block;
+        padding: 10px 15px;
+        position: relative;
+        transition: all 0.5s;
+      }
+
+      ul li a:before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        width: 0;
+        aspect-ratio: 1/1;
+        border-top: solid 3px transparent;
+        border-left: solid 3px transparent;
+        transition: width 0.5s;
+      }
+
+      ul li a:after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+        width: 0;
+        aspect-ratio: 1/1;
+        border-bottom: solid 3px transparent;
+        border-right: solid 3px transparent;
+        transition: width 0.5s;
+      }
+
+      li:hover a:before {
+        width: 20px;
+        border-top: solid 3px rgb(194, 40, 89);
+        border-left: solid 3px rgb(194, 40, 89);
+      }
+      li:hover a:after {
+        width: 20px;
+        border-right: solid 3px rgb(194, 40, 89);
+        border-bottom: solid 3px rgb(194, 40, 89);
+      }
+
+      li:hover a {
+        background-color: rgb(194, 40, 89);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </body>
+</html>

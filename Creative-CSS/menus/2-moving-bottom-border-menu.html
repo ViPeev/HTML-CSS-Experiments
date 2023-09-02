@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        background-color: white;
+        box-sizing: border-box;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+      }
+
+      ul li {
+        list-style: none;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: #3d3d3d;
+        font-size: 22px;
+        display: block;
+        padding: 10px 15px;
+        position: relative;
+        transition: all 0.5s;
+      }
+
+      ul li a:before {
+        content: "";
+        position: absolute;
+        bottom:0;
+        left:0;
+        width: 0;
+        height:5px;
+        background-color: #f0f;
+        transition: all 0.5s;
+        transform-origin:right;
+      }
+      ul li a:after {
+        content: "";
+        position: absolute;
+        bottom:0;
+        right:0;
+        width: 0;
+        height:5px;
+        background-color: rgb(8, 169, 187);
+        transition: width 0.5s;
+      }
+
+      li:hover a:before {
+        width:50%;
+        transform: translateX(100%);
+      }
+      li:hover a:after {
+        width:50%;
+        transform: translateX(-100%);
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </body>
+</html>

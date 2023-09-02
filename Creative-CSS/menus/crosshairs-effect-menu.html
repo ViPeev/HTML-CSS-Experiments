@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        background-color: black;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+
+      li {
+        list-style: none;
+        padding: 10px 40px;
+      }
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 24px;
+        color: white;
+        position: relative;
+        padding: 5px;
+        transition: all 0.3s;
+      }
+
+      a:hover {
+        color: #ff0;
+      }
+
+      span:first-child:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        background-color: transparent;
+        border-top: 2px solid #ff0;
+        border-left: 2px solid #ff0;
+        transition: 0.2s;
+        opacity: 0;
+      }
+      span:first-child:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 8px;
+        height: 8px;
+        background-color: transparent;
+        border-top: 2px solid #ff0;
+        border-right: 2px solid #ff0;
+        transition: 0.2s;
+        opacity: 0;
+      }
+      span:nth-child(2):before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        background-color: transparent;
+        border-bottom: 2px solid #ff0;
+        border-left: 2px solid #ff0;
+        transition: 0.2s;
+        opacity: 0;
+      }
+      span:nth-child(2):after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 8px;
+        height: 8px;
+        background-color: transparent;
+        border-bottom: 2px solid #ff0;
+        border-right: 2px solid #ff0;
+        transition: 0.2s;
+        opacity: 0;
+      }
+
+      a:hover span:first-child:before {
+        top: -10px;
+        left: -10px;
+        opacity: 1;
+      }
+      a:hover span:first-child:after {
+        top: -10px;
+        right: -10px;
+        opacity: 1;
+      }
+      a:hover span:nth-child(2):before {
+        bottom: -10px;
+        left: -10px;
+        opacity: 1;
+      }
+      a:hover span:nth-child(2):after {
+        bottom: -10px;
+        right: -10px;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="#"><span></span><span></span>Home</a>
+      </li>
+      <li>
+        <a href="#"><span></span><span></span>About</a>
+      </li>
+      <li>
+        <a href="#"><span></span><span></span>Services</a>
+      </li>
+      <li>
+        <a href="#"><span></span><span></span>Portfolio</a>
+      </li>
+      <li>
+        <a href="#"><span></span><span></span>Contact</a>
+      </li>
+    </ul>
+  </body>
+</html>
