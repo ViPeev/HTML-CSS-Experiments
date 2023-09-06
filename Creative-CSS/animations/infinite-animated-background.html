@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .background {
+        height: 100vh;
+        background-image: url("./assets/bg.jpg");
+        background-position: bottom left;
+        animation: driving 15s linear infinite;
+      }
+
+      @keyframes driving {
+        from {
+          background-position: bottom left;
+        }
+        to {
+          background-position: bottom right;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background"></div>
+  </body>
+</html>

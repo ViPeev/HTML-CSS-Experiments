@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #ee5253;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .loader {
+        position: relative;
+        width: 90px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+      span {
+        width: 30px;
+        height: 30px;
+        position: relative;
+      }
+
+      span:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        animation: loading 1s linear infinite;
+      }
+
+      span:nth-child(4):before,
+      span:nth-child(5):before,
+      span:nth-child(6):before {
+        animation-delay: 0.1s;
+      }
+      span:nth-child(7):before,
+      span:nth-child(8):before,
+      span:nth-child(9):before {
+        animation-delay: 0.2s;
+      }
+
+      @keyframes loading {
+        0% {
+          width: 100%;
+          height: 100%;
+        }
+        100% {
+          width: 0;
+          height: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader">
+      <span></span><span></span><span></span><span></span><span></span
+      ><span></span><span></span><span></span><span></span>
+    </div>
+  </body>
+</html>
